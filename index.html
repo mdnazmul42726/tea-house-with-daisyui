@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,15 +7,70 @@
     <title>Document</title>
     <!-- fav icon linking here -->
     <!-- external css linking here -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- daisyUI 3.3.1 CSS file + Tailwind CSS CDN script linking here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font linking here -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
     <!-- font-awesome icon linking here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  tailwind custom configuration js added here -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section start -->
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="">
+                    <img src="./images/banner.png" class="max-w-lg" />
+                    <!-- reating badge -->
+                    <div class="flex items-center gap-10 drop-shadow-lg bg-[#fff] w-60 -mt-24 ml-6 rounded-lg">
+                        <i class="fa-solid fa-star text-3xl text-[#FFDC64] p-5 w-4"></i>
+                        <div class="">
+                            <h3 class="text-3xl">
+                                5.00
+                            </h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good<br>tea time at The<br>Tea House
+                    </h1>
+                    <p class="py-6">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-[#fff]">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <main class="container mx-auto">
+        <!-- Featured section start -->
+        
+        <!-- Featured section end -->
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
